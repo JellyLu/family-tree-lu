@@ -1,0 +1,6 @@
+.idea
+.swc
+.yarn
+dist
+node_modules
+.pnp.*

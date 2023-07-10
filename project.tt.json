@@ -1,0 +1,9 @@
+{
+  "miniprogramRoot": "./",
+  "projectname": "family-tree-lu",
+  "appid": "testAppId",
+  "setting": {
+    "es6": false,
+    "minified": false
+  }
+}
