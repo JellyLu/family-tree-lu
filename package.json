@@ -51,8 +51,7 @@
     "@tarojs/shared": "3.6.8",
     "@tarojs/taro": "3.6.8",
     "react": "^18.0.0",
-    "react-dom": "^18.0.0",
-    "taro3-echarts-react": "^1.0.4"
+    "react-dom": "^18.0.0"
   },
   "devDependencies": {
     "@babel/core": "^7.8.0",
