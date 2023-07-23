@@ -7,6 +7,15 @@ import "./index.scss";
 export default class Index extends Component {
   componentDidMount() {
     const option = {
+      toolbox: {
+        show : true,
+        feature : {
+          mark : {show: true},
+          dataView : {show: true, readOnly: false},
+          restore : {show: true},
+          saveAsImage : {show: true}
+        }
+      },
       series: [
         {
           type: 'graph',
@@ -30,9 +39,9 @@ export default class Index extends Component {
           links: [
             { source: '甲', target: '甲夫人' },
             { source: '甲', target: '乙' },
-            { source: '甲夫人', target: '乙' },
+            // { source: '甲夫人', target: '乙' },
             { source: '甲', target: '丙' },
-            { source: '甲夫人', target: '丙' },
+            // { source: '甲夫人', target: '丙' },
             { source: '乙', target: '乙丈夫' },
           ],
           categories: [
