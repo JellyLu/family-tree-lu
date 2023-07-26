@@ -5,11 +5,11 @@ export const data = {
             value: {
                 title: '甲',
                 items: [
-                    {
-                        text: 'LU1',
-                        value: 'diyige',
-                        icon: 'https://gw.alipayobjects.com/zos/antfincdn/iFh9X011qd/7797962c-04b6-4d67-9143-e9d05f9778bf.png',
-                    },
+                    // {
+                        // text: '甲',
+                        // value: 'diyige',
+                        // icon: 'https://gw.alipayobjects.com/zos/antfincdn/iFh9X011qd/7797962c-04b6-4d67-9143-e9d05f9778bf.png',
+                    // },
                 ],
             },
         },
@@ -24,7 +24,6 @@ export const data = {
             id: '3',
             value: {
                 title: '乙',
-                items: [],
             },
         },
         {
@@ -64,8 +63,8 @@ export const data = {
         //     value: '母子',
         // },
         {
-            source: '1',
-            target: '2',
+            source: '2',
+            target: '1',
             value: '夫妻',
         },
         {
