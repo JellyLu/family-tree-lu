@@ -1,32 +1,32 @@
 import {FlowAnalysisGraph} from '@ant-design/graphs';
 import {data} from "./data";
 import {View} from "@tarojs/components";
+import type {FlowAnalysisGraphConfig} from "@ant-design/graphs/es/components/flow-analysis-graph";
+import { NodeConfig } from "@ant-design/graphs/es/interface";
 
 const AntChart = () => {
-    const config = {
+    const config: FlowAnalysisGraphConfig = {
         data,
-        layout: {
-            rankdir: 'TB',
-            // ranksepFunc: () => 20,
-        },
+        customLayout: true,
+        autoFit: false,
+        fitCenter: false,
         nodeCfg: {
             type: 'rect',
             size: [50, 50],
-            anchorPoints: [
-                [0.5, 1],
-                [0.5, 0],
-            ]
+            anchorPoints: (node: NodeConfig) => {
+                console.log('---node', node);
+                return ([
+                    [0.5, 1],
+                    [0.5, 0],
+                ]);
+            },
         },
         edgeCfg: {
             type: 'polyline',
         },
-        markerCfg: (cfg) => {
-            return {
-                position: 'bottom',
-                show: data.edges.filter((item) => item.source === cfg.id)?.length,
-            };
-        },
         behaviors: ['drag-canvas', 'zoom-canvas', 'drag-node'],
+        width: window.screen.width,
+        height: window.screen.height,
     };
 
     return (

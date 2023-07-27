@@ -2,19 +2,21 @@ export const data = {
     nodes: [
         {
             id: '1',
+            x: 500,
+            y: 100,
+            startPoint: [0.5, 1],
+            endPoint: [0, 0.5],
             value: {
                 title: '甲',
-                items: [
-                    // {
-                        // text: '甲',
-                        // value: 'diyige',
-                        // icon: 'https://gw.alipayobjects.com/zos/antfincdn/iFh9X011qd/7797962c-04b6-4d67-9143-e9d05f9778bf.png',
-                    // },
-                ],
+                items: [],
             },
         },
         {
             id: '2',
+            x: 700,
+            y: 100,
+            startPoint: [0.5, 1],
+            endPoint: [1, 0.5],
             value: {
                 title: '甲夫人',
                 items: [],
@@ -22,12 +24,20 @@ export const data = {
         },
         {
             id: '3',
+            x: 400,
+            y: 300,
+            startPoint: [0.5, 1],
+            endPoint: [0, 0.5],
             value: {
                 title: '乙',
             },
         },
         {
             id: '4',
+            x: 200,
+            y: 300,
+            startPoint: [0.5, 1],
+            endPoint: [1, 0.5],
             value: {
                 title: '乙丈夫',
                 items: [],
@@ -35,6 +45,10 @@ export const data = {
         },
         {
             id: '5',
+            x: 600,
+            y: 300,
+            startPoint: [0.5, 1],
+            endPoint: [0, 0.5],
             value: {
                 title: '丙',
                 items: [],
