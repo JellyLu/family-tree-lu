@@ -1,7 +1,7 @@
 export const data = {
     nodes: [
         {
-            id: '1',
+            id: '11',
             x: 500,
             y: 100,
             startPoint: [0.5, 1],
@@ -12,8 +12,8 @@ export const data = {
             },
         },
         {
-            id: '2',
-            x: 700,
+            id: '12',
+            x: 300,
             y: 100,
             startPoint: [0.5, 1],
             endPoint: [1, 0.5],
@@ -23,7 +23,18 @@ export const data = {
             },
         },
         {
-            id: '3',
+            id: '13',
+            x: 700,
+            y: 100,
+            startPoint: [0.5, 1],
+            endPoint: [1, 0.5],
+            value: {
+                title: '甲夫人2',
+                items: [],
+            },
+        },
+        {
+            id: '21',
             x: 400,
             y: 300,
             startPoint: [0.5, 1],
@@ -33,7 +44,7 @@ export const data = {
             },
         },
         {
-            id: '4',
+            id: '22',
             x: 200,
             y: 300,
             startPoint: [0.5, 1],
@@ -44,7 +55,7 @@ export const data = {
             },
         },
         {
-            id: '5',
+            id: '23',
             x: 600,
             y: 300,
             startPoint: [0.5, 1],
@@ -54,37 +65,63 @@ export const data = {
                 items: [],
             },
         },
+        {
+            id: '24',
+            x: 800,
+            y: 300,
+            startPoint: [0.5, 1],
+            endPoint: [0, 0.5],
+            value: {
+                title: '丁',
+                items: [],
+            },
+        },
     ],
     edges: [
         {
-            source: '1',
-            target: '3',
+            source: '11',
+            target: '21',
             value: '父女',
         },
-        // {
-        //     source: '2',
-        //     target: '3',
-        //     value: '母女',
-        // },
         {
-            source: '1',
-            target: '5',
+            source: '12',
+            target: '21',
+            value: '母女',
+        },
+        {
+            source: '11',
+            target: '23',
             value: '父子',
         },
         // {
-        //     source: '2',
-        //     target: '5',
+        //     source: '12',
+        //     target: '23',
         //     value: '母子',
         // },
         {
-            source: '2',
-            target: '1',
+            source: '12',
+            target: '11',
             value: '夫妻',
         },
         {
-            source: '3',
-            target: '4',
+            source: '21',
+            target: '22',
             value: '夫妻',
         },
+        {
+            source: '11',
+            target: '13',
+            value: '夫妻',
+        },
+        {
+            source: '11',
+            target: '24',
+            value: '父子',
+        },
+        // {
+        //     source: '14',
+        //     target: '24',
+        //     value: '母子',
+        // },
     ],
 };
