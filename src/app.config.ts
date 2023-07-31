@@ -1,6 +1,7 @@
 export default defineAppConfig({
   pages: [
     'pages/index/index',
+    'pages/primitive-diagram/index',
     'pages/ant-chart/index',
   ],
   window: {
@@ -19,9 +20,13 @@ export default defineAppConfig({
         pagePath: 'pages/index/index',
       },
       {
+        text: 'primitive',
+        pagePath: 'pages/primitive-diagram/index',
+      },
+      {
         text: 'ant',
         pagePath: 'pages/ant-chart/index',
-      }
+      },
     ]
   },
 
